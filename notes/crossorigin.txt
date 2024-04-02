@@ -1,0 +1,18 @@
+crossorigin
+
+`crossorigin` is an attribute used in HTML and JavaScript, particularly in the context of web development. It is often used with elements such as `<img>`, `<link>`, `<script>`, and `<audio>` to manage cross-origin requests for resources.
+
+When you load resources (such as images, stylesheets, scripts, or fonts) from a different domain than the one your web page is hosted on, it's considered a cross-origin request. Browsers typically restrict such requests due to security concerns, a mechanism known as the Same-Origin Policy.
+
+The `crossorigin` attribute allows you to control how the browser handles such requests:
+
+- `crossorigin="anonymous"`: This indicates that the resource should be fetched without sending any credentials (such as cookies or HTTP authentication) along with the request. This is typically used for public resources that don't require authentication.
+- `crossorigin="use-credentials"`: This indicates that the browser should include credentials with the request, such as cookies. This is used when the resource requires authentication or authorization.
+
+For example, when loading a script from a different origin:
+
+```html
+<script src="https://example.com/script.js" crossorigin="anonymous"></script>
+```
+
+This tells the browser to load the script without sending any credentials along with the request. It's important to note that the server hosting the resource must also be configured to allow cross-origin requests, typically by sending the appropriate CORS (Cross-Origin Resource Sharing) headers.

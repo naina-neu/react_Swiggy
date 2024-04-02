@@ -1,0 +1,9 @@
+CDN
+
+CDN stands for Content Delivery Network. It's a network of distributed servers strategically positioned in multiple data centers across the globe. The primary purpose of a CDN is to deliver web content (such as images, videos, scripts, and stylesheets) to users more efficiently based on their geographic location.
+
+CDNs work by caching copies of static content on servers located closer to end-users. When a user requests content, the CDN serves it from the nearest server rather than from the origin server where the content is hosted. This reduces latency and improves website loading speeds, resulting in a better user experience.
+
+CDNs also help mitigate traffic spikes and distribute bandwidth usage, which can prevent website slowdowns or crashes during periods of high demand, such as during product launches or major events.
+
+Overall, CDNs improve website performance, reliability, and security while reducing bandwidth costs for website owners. They are an essential component of modern web infrastructure, particularly for websites serving a global audience.
