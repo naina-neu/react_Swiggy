@@ -1,0 +1,17 @@
+`npm` and `npx` are both command-line tools that come bundled with Node.js for managing packages and executing Node.js binaries, respectively. Here's an explanation of each:
+
+1. **npm (Node Package Manager)**:
+   - `npm` is the default package manager for Node.js, used for installing, managing, and publishing packages (libraries or modules) for Node.js projects.
+   - It is primarily used to install dependencies required by Node.js projects, specified in the project's `package.json` file.
+   - With `npm`, you can install packages locally (project-specific) or globally (system-wide).
+   - npm also provides various commands for managing packages, such as `install`, `uninstall`, `update`, `publish`, etc.
+   - Additionally, npm allows you to manage project scripts, which are defined in the `scripts` section of the `package.json` file.
+
+2. **npx**:
+   - `npx` is a tool that comes bundled with npm (since npm version 5.2.0) and is used for executing Node.js packages directly.
+   - It allows you to run binaries from npm packages without having to install them globally or locally beforehand.
+   - `npx` searches for the executable in local `node_modules/.bin` directory or downloads and installs the package on-the-fly if it's not found locally.
+   - One of the most common use cases for `npx` is running binaries of packages that you don't want to install globally or for one-time use.
+   - Additionally, `npx` provides other useful features such as running commands with a specific Node.js version (`npx -p node@version`) or running commands with specific environment variables (`npx env-cmd`).
+
+In summary, while `npm` is the package manager used for installing and managing dependencies for Node.js projects, `npx` is a tool for executing Node.js binaries, allowing you to run commands from packages without installing them globally or locally. Both `npm` and `npx` are valuable tools for managing and working with Node.js projects and their dependencies.
