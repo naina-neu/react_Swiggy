@@ -1,0 +1,50 @@
+In React, "props" is short for "properties" and refers to a mechanism for passing data from parent components to child components. Props are read-only, meaning that child components cannot modify the data received via props. They are a fundamental concept in React and are used to customize and configure components, making them reusable and flexible.
+
+Here's a basic example of how props work in React:
+
+```javascript
+// ParentComponent.js
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+function ParentComponent() {
+  // Define data to be passed as props
+  const data = {
+    name: 'John Doe',
+    age: 30
+  };
+
+  return (
+    <div>
+      {/* Pass data as props to ChildComponent */}
+      <ChildComponent data={data} />
+    </div>
+  );
+}
+
+export default ParentComponent;
+
+// ChildComponent.js
+import React from 'react';
+
+function ChildComponent(props) {
+  // Access data passed via props
+  const { name, age } = props.data;
+
+  return (
+    <div>
+      <h2>Name: {name}</h2>
+      <h2>Age: {age}</h2>
+    </div>
+  );
+}
+
+export default ChildComponent;
+```
+
+In this example:
+
+- The `ParentComponent` renders the `ChildComponent` and passes it some data (in this case, an object with a name and age).
+- The `ChildComponent` receives the data via props and uses it to render content.
+
+Props are passed down through the component tree, allowing for the composition of complex UIs from simpler, reusable components. They enable components to be highly configurable and adaptable to different use cases.
